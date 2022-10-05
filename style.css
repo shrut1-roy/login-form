@@ -1,0 +1,127 @@
+:root {
+  font-size: 100%;
+  font-size: 16px;
+  --primary-blue: #233975;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-blue);
+}
+a:hover {
+  text-decoration: underline;
+}
+.small {
+  font-size: 80%;
+  text-align: center;
+}
+.split-screen {
+  display: flex;
+  flex-direction: column;
+}
+.left {
+  height: 200px;
+}
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left {
+  background-image: url(https://images.unsplash.com/photo-1473773508845-188df298d2d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+  background-size: cover;
+}
+.left .text {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 3px #000;
+}
+.left p {
+  font-weight: 400;
+}
+.right .text {
+  color: black;
+  text-align: center;
+}
+.right .text p {
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+.right form {
+  width: 328px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 7px;
+  /* border: 1px solid #c4c4c4; */
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  margin-bottom: 1.25rem;
+  font-size: 0.8rem;
+}
+#fname:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: all ease 0.5s;
+}
+#email:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: all ease 0.5s;
+}
+#password:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: all ease 0.5s;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.81rem;
+}
+.signup-btn {
+  display: block;
+  width: 100%;
+  background: var(--primary-blue);
+  color: aliceblue;
+  font-weight: 700;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.signup-btn:hover {
+  background: #0096ff;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+@media screen and (min-width: 900px) {
+  .split-screen {
+    flex-direction: row;
+    height: 100vh;
+  }
+  .left,
+  .right {
+    display: flex;
+    width: 50%;
+    height: auto;
+  }
+}
